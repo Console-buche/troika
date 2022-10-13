@@ -6,7 +6,7 @@ import {
   Mesh,
   MeshBasicMaterial,
   Plane,
-  PlaneBufferGeometry,
+  PlaneGeometry,
   SphereBufferGeometry,
   Vector3
 } from 'three'
@@ -180,7 +180,7 @@ class ValuePlane extends Object3DFacade {
       `
     })
     super(parent, new Mesh(
-      new PlaneBufferGeometry(),
+      new PlaneGeometry(),
       material
     ))
   }
